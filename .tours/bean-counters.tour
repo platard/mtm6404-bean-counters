@@ -1,0 +1,36 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Bean Counters",
+  "steps": [
+    {
+      "file": "functions.js",
+      "description": "## Task 1: Create the rows for the table\r\n1. Create a function called `rows`\r\n2. Create the HTML for each bean counter. \r\n3. Return a single string with the proper HTML code to build all the rows.\r\n> Hints:\r\n> - The function receives the 'counters' array (parameter) `function rows (counters) {...}`\r\n> - Use the map() method to create the HTML for each bean counter `counters.map(counter => templateLiteral )`\r\n> - Use the join() method to create a single string with all the HTML\r\n`resultingArray.join('')`",
+      "line": 1
+    },
+    {
+      "file": "functions.js",
+      "description": "## Task 2: Filter the counters that match the search query\r\n\r\n1. Create a function called 'search'; It receives 2 parameters: 'counters' array, and the 'query'\r\n2. Return a filtered array of counters; Match Name or Bean; case-insensitive\r\n> Hints:\r\n> - Use includes() method to determine if an array includes a certain value `counter.name.includes(query)`\r\n> - Uset toLowerCase() method to make it case-insensitive `counter.name.toLowerCase().includes( searchElement )`\r\n> - Use the logical operator 'OR' to find the query in the 'Name' or in the 'Bean' `expression1 || expression2`",
+      "line": 20
+    },
+    {
+      "file": "functions.js",
+      "description": "## Total: Calculates the total number of counted beans\r\n\r\n1. Create a function called 'total'; Receive the 'counters' as parameter\r\n2. Return the sum of all the counters\r\n\r\n> Hints:\r\n> - Use the reduce() method to calculate the total ` return counters.reduce(callbackFunction)`\r\n> - The callback function receives 2 parameters: 'acumulator' and 'currentValue' `counters.reduce((total, counter) => expression )`\r\n> - Define the initial value of the acumulator `counters.reduce((total, counter) => expression , 0 )`",
+      "line": 30
+    },
+    {
+      "file": "functions.js",
+      "description": "## Order: sort the 'bean counters' by property (index, name, bean, count)\r\n\r\n1. Create a function called 'order'; Receive the 'counters' array and the 'property'\r\n2. Return an ordered array of counters\r\n> Hints:\r\n> - Use the sort() with the callback function to properly order the values\r\n",
+      "line": 40,
+      "selection": {
+        "start": {
+          "line": 41,
+          "character": 1
+        },
+        "end": {
+          "line": 49,
+          "character": 2
+        }
+      }
+    }
+  ]
+}
